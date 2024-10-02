@@ -2,6 +2,7 @@ package com.selloramotsheki.eCommerce.service.product;
 
 import com.selloramotsheki.eCommerce.model.Product;
 import com.selloramotsheki.eCommerce.request.AddProductRequest;
+import com.selloramotsheki.eCommerce.request.ProductUpdateRequest;
 
 import java.util.List;
 
@@ -11,7 +12,7 @@ public interface IProductService {
     //List<Product> getAllProducts();
     Product getProductById(Long id);
     void deleteProductById(Long id);
-    void updateProduct(Product product, Long productId);
+    Product updateProduct(ProductUpdateRequest product, Long productId);
     List<Product> getAllProducts();
     List<Product> getProductsByCategory(String category);
     List<Product> getProductsByBrand(String brand);

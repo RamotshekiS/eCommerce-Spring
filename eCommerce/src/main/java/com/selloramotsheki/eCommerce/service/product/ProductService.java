@@ -29,7 +29,7 @@ public class ProductService implements IProductService{
         //check if the category is found in the db
         //if yes, set it as the new product category
         //if no, save it as a new category
-        //The set as the new product category
+        //Then set as the new product category
 
         Category category = Optional.ofNullable(categoryRepository.findByName(request.getCategory().getName()))
                 .orElseGet(()-> {
@@ -66,8 +66,11 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public void updateProduct(Product product, Long productId) {
-
+    public Product updateProduct(ProductUpdateRequest request, Long productId) {
+        return productRepository.findById(productId)
+                .map(existingProduct -> updateExistingProduct(existingProduct, request))
+                .map(productRepository :: save)
+                .orElseThrow(() -> new ProductNotFoundExecption("Product not found"));
     }
 
     private Product updateExistingProduct(Product existingProduct, ProductUpdateRequest request){
