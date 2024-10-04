@@ -29,4 +29,15 @@ public class Image {
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
+    
+    public void setFileName(String fileName){
+        this.fileName = fileName;
+    }
+
+    public void setImage(Blob image){
+        this.image = image;
+    }
+
+
+
 }
