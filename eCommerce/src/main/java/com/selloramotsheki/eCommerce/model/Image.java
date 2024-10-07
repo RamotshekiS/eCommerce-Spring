@@ -39,5 +39,29 @@ public class Image {
     }
 
 
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
 
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setDownloadUrl(String downloadUrl) {
+        this.downloadUrl = downloadUrl;
+    }
+
+    public String getFileName(){
+        return fileName;
+    }
+
+
+    public String getDownloadUrl() {
+        return downloadUrl;
+    }
 }
