@@ -15,6 +15,7 @@ import java.sql.Blob;
 @Entity
 
 public class Image {
+    public String getImage;
     //Setting primary key
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +25,7 @@ public class Image {
 
     @Lob
     private Blob image;
+    //private Byte[] imageData;
     private String downloadUrl;
 
     @ManyToOne
@@ -38,6 +40,9 @@ public class Image {
         this.image = image;
     }
 
+    public Blob getImage(){
+        return image;
+    }
 
     public void setFileType(String fileType) {
         this.fileType = fileType;
@@ -63,5 +68,9 @@ public class Image {
 
     public String getDownloadUrl() {
         return downloadUrl;
+    }
+
+    public String getFileType() {
+        return fileType;
     }
 }
