@@ -40,29 +40,29 @@ public class Product {
         this.description = description;
         this.category = category;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    public void setInventory(int inventory) {
-        this.inventory = inventory;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public void setBrand(String brand) {
+//        this.brand = brand;
+//    }
+//
+//    public void setPrice(BigDecimal price) {
+//        this.price = price;
+//    }
+//
+//    public void setInventory(int inventory) {
+//        this.inventory = inventory;
+//    }
+//
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
+//
+//    public void setCategory(Category category) {
+//        this.category = category;
+//    }
 
 }

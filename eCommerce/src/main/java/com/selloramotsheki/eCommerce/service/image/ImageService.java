@@ -22,15 +22,10 @@ import java.util.List;
 
 
 @Service
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class ImageService implements IImageService{
     private final ImageRepository imageRepository;
     private final ProductRepository productRepository;
-
-    public ImageService(ImageRepository imageRepository, ProductRepository productRepository) {
-        this.imageRepository = imageRepository;
-        this.productRepository = productRepository;
-    }
 
     @Override
     public Image getImageById(Long id) {

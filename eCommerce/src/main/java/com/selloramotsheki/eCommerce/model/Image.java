@@ -32,45 +32,45 @@ public class Image {
     @JoinColumn(name = "product_id")
     private Product product;
     
-    public void setFileName(String fileName){
-        this.fileName = fileName;
-    }
-
-    public void setImage(Blob image){
-        this.image = image;
-    }
-
-    public Blob getImage(){
-        return image;
-    }
-
-    public void setFileType(String fileType) {
-        this.fileType = fileType;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
-    }
-
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setDownloadUrl(String downloadUrl) {
-        this.downloadUrl = downloadUrl;
-    }
-
-    public String getFileName(){
-        return fileName;
-    }
-
-
-    public String getDownloadUrl() {
-        return downloadUrl;
-    }
-
-    public String getFileType() {
-        return fileType;
-    }
+//    public void setFileName(String fileName){
+//        this.fileName = fileName;
+//    }
+//
+//    public void setImage(Blob image){
+//        this.image = image;
+//    }
+//
+//    public Blob getImage(){
+//        return image;
+//    }
+//
+//    public void setFileType(String fileType) {
+//        this.fileType = fileType;
+//    }
+//
+//    public void setProduct(Product product) {
+//        this.product = product;
+//    }
+//
+//
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setDownloadUrl(String downloadUrl) {
+//        this.downloadUrl = downloadUrl;
+//    }
+//
+//    public String getFileName(){
+//        return fileName;
+//    }
+//
+//
+//    public String getDownloadUrl() {
+//        return downloadUrl;
+//    }
+//
+//    public String getFileType() {
+//        return fileType;
+//    }
 }

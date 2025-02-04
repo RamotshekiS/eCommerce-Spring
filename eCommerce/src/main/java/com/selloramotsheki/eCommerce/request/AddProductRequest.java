@@ -18,31 +18,31 @@ public class AddProductRequest {
     private Category category;
 
 
-    public String getName() {
-        return name;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public int getInventory() {
-        return inventory;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Category getCategory() {
-        return category;
-    }
-
-    public void setCategory(Category category) {
-        this.category = category;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public String getBrand() {
+//        return brand;
+//    }
+//
+//    public BigDecimal getPrice() {
+//        return price;
+//    }
+//
+//    public int getInventory() {
+//        return inventory;
+//    }
+//
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    public Category getCategory() {
+//        return category;
+//    }
+//
+//    public void setCategory(Category category) {
+//        this.category = category;
+//    }
 }
