@@ -1,5 +1,6 @@
 package com.selloramotsheki.eCommerce.service.product;
 
+import com.selloramotsheki.eCommerce.Dto.ProductDto;
 import com.selloramotsheki.eCommerce.model.Product;
 import com.selloramotsheki.eCommerce.request.AddProductRequest;
 import com.selloramotsheki.eCommerce.request.ProductUpdateRequest;
@@ -21,4 +22,7 @@ public interface IProductService {
     List<Product> getProductByBrandAndName(String brand, String name);
     Long countProductsByBrandAndName(String brand, String name);
 
+    List<ProductDto> getCovertedProduct(List<Product> products);
+
+    ProductDto convertToDto(Product product);
 }
